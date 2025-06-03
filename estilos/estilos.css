@@ -1,0 +1,165 @@
+/* Estilos Generales  */
+.GENERAL {
+    color: bisque;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Inicio Header  */
+
+.ContenedorHeader {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1rem;
+
+}
+
+
+.FotoFondoHeader {
+    background-image: url(../img/07092024-DSC_5561\ \(1\).jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.ImagenLogo {
+    height: 8rem;
+}
+
+
+.ContenedorInferiorHeader {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    height: 80vh;
+}
+
+
+ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    gap: 1rem;
+    flex-direction: column;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(100, 186, 226);
+    font-weight: bold;
+    font-size: large;
+}
+
+.TituloHeader {
+    font-size: 3rem;
+    text-align: center;
+    font-weight: 500;
+    color: bisque;
+    padding-top: 10rem;
+}
+
+/* Inicio Main  */
+.Principal {
+    padding: 0.5rem;
+    text-align: center
+}
+
+.ProductosImg {
+    width: 100%;
+}
+
+.Botonmain {
+    padding: 1rem;
+    margin: 1rem;
+    background-color: aqua;
+    border: 1px solid rgb(231, 213, 213)
+}
+
+.ProductosMain {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    row-gap: 2rem;
+}
+
+.Contenedor {
+    width: 15rem;
+    transition: transform 0.5s;
+}
+
+.Contenedor:hover{
+    transform: scale(1.1);
+}
+
+
+.PrecioProducto {
+    color: rgb(0, 0, 0);
+}
+
+.PrecioProducto span {
+    text-decoration: line-through;
+    color: red;
+}
+
+/*Clientes estilo*/
+
+.ConteinerGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    width: 100%;
+}
+
+.ClienteCard {
+    border: 1px solid #000;
+
+}
+
+/* Footer  */
+.Footerfinal {
+    text-decoration: none;
+    list-style: none;
+    background-color: rgba(0, 0, 0, 0.89);
+    color: bisque;
+    padding: 0, 5rem;
+}
+
+.InstagramFuente {
+    font-size: 20px;
+    color: rgb(100, 186, 226);
+}
+
+
+/*TABLET*/
+
+@media only screen and (min-width: 600px) {
+    ul {
+        flex-direction: row;
+    }
+}
+
+
+
+/*DESKTOP*/
+
+@media only screen and (min-width: 1020px) {
+    .ContenedorHeader {
+        flex-direction: row;
+        padding: 1rem;
+        justify-content: space-between;
+    }
+}
