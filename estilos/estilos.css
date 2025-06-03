@@ -31,6 +31,7 @@ body {
     margin: 0;
     padding: 0;
     width: 100%;
+    background-position: center;
 }
 
 .ImagenLogo {
@@ -65,7 +66,7 @@ a {
 }
 
 .TituloHeader {
-    font-size: 3rem;
+    font-size: 2rem;
     text-align: center;
     font-weight: 500;
     color: bisque;
@@ -101,7 +102,7 @@ a {
     transition: transform 0.5s;
 }
 
-.Contenedor:hover{
+.Contenedor:hover {
     transform: scale(1.1);
 }
 
@@ -131,11 +132,12 @@ a {
 
 /* Footer  */
 .Footerfinal {
+    padding: 10px;
     text-decoration: none;
     list-style: none;
     background-color: rgba(0, 0, 0, 0.89);
     color: bisque;
-    padding: 0, 5rem;
+
 }
 
 .InstagramFuente {
@@ -144,22 +146,16 @@ a {
 }
 
 
-/*TABLET*/
-
-@media only screen and (min-width: 600px) {
-    ul {
-        flex-direction: row;
-    }
-}
-
-
 
 /*DESKTOP*/
 
 @media only screen and (min-width: 1020px) {
+    body {
+        padding-top: 80px;
+    }
+
     .ContenedorHeader {
         flex-direction: row;
-        padding: 1rem;
         justify-content: space-between;
     }
 }
